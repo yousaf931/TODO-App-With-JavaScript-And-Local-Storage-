@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>To-Do-List</title>
+</head>
+
+<body>
+    <header class="h-64 bg-black text-white flex justify-center items-center flex-col" id="main-header">
+        <div class="space-y-5" >
+                <h1 class="text-2xl">Today</h1>
+                <form action="" id="todo-form" class="space-x-2">
+                    <input type="text" name="task-name" placeholder="e.g Buy groceries" autofocus
+                        class="bg-dark-blue border-0 p-2 rounded-md w-72">
+                    <button type="submit" class="bg-orange p-2 border-0 rounded-md px-4 font-semibold"> ADD TASK</button>
+                </form>
+        </div>
+    </header>
+    <section class="container flex justify-center  mt-12 mb-12">
+        <div class="" id="main-content">
+            <ul class="flex text-white gap-6 pb-12">
+                <li>
+                    <span class="bg-dark-blue rounded-l-md p-2 px-2">Remaining</span><span
+                        class="bg-blue rounded-r-md p-2 px-2" id="remaining-tasks">0</span>
+                </li>
+                <li>
+                    <span class="bg-dark-blue rounded-l-md p-2 px-2">Completed</span><span
+                        class="bg-blue rounded-r-md p-2 px-2" id="completed-tasks">0</span>
+                </li>
+                <li>
+                    <span class="bg-dark-blue rounded-l-md p-2 px-2">Total</span><span
+                        class="bg-blue rounded-r-md p-2 px-2" id="total-tasks">0</span>
+                </li>
+            </ul>
+            <ul class="todos">
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/todolist.js"></script>
+</body>
+
+</html>
